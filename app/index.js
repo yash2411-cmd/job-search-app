@@ -12,7 +12,7 @@ const Home = () => {
             <Stack.Screen
                 options={{
                     headerStyle: {backgroundColor:COLORS.lightWhite},
-                    headerShadowVisible: false,
+                    headerShadowVisible: false, // using this to ignore the shadow of the title page line.
                 }}
             />
         </SafeAreaView>
