@@ -38,7 +38,7 @@ const Welcome = () => {
           />
         </View>
 
-        {/* making the search button on rigght side of searchbar. */}
+        {/* making the search button on right side of searchbar. */}
         <TouchableOpacity style={styles.searchBtn} onPress={() => {}}>
            <Image
             source={icons.search}
