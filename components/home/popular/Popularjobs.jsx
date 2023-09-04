@@ -16,8 +16,14 @@ const Popularjobs = () => {
       num_pages: 1,
     })
 
+    const [selectedJob, setSelectedJob] = useState();
     console.log(data);
   
+    const handleCardPress = (item) => {
+      router.push(`/job-details/${item.job_id}`);
+      setSelectedJob(item.job_id);
+    };
+
   return (
     <View style= {styles.container}>
       <View style= {styles.header}>
@@ -34,10 +40,12 @@ const Popularjobs = () => {
         ):(
           // making a horizontal scrollbar under job section
           <FlatList
-            data= {[1,2,3,4,5,6,7,8]}
+            data= {data}
             renderItem={({item}) => (
               <PopularJobCard
                 item = {item}
+                selectedJob={selectedJob}
+                handleCardPress={handleCardPress}
               />
             )}
             keyExtractor={item=> item?.job_id}
