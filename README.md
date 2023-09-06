@@ -18,4 +18,11 @@ npx create-expo-app -e with-router
 ![Screen-shots](react-native-app\assets\img3.jpg)
 ![Screen-shots](react-native-app\assets\img4.jpg)
 
+
+![img1](https://github.com/yash2411-cmd/job-search-app/assets/71682845/f047e3d5-8696-4be1-bd24-a28b12948ac5)
+
+![img2](https://github.com/yash2411-cmd/job-search-app/assets/71682845/69644373-ac0d-4766-b712-59bd3155d4eb)
+
+![img4](https://github.com/yash2411-cmd/job-search-app/assets/71682845/c2aaf1f3-cc38-46c4-81e5-b3b4117766be)
+
 ![img3](https://github.com/yash2411-cmd/job-search-app/assets/71682845/930b9000-3d69-46be-9a89-9b4e6c920e58)
