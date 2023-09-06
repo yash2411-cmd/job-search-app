@@ -12,3 +12,8 @@ npx create-expo-app -e with-router
 
 - [Expo Router: Docs](https://expo.github.io/router)
 - [Expo Router: Repo](https://github.com/expo/router)
+
+![Screen-shots](img1.jpg)
+![Screen-shots](img2.jpg)
+![Screen-shots](img3.jpg)
+![Screen-shots](img4.jpg)
