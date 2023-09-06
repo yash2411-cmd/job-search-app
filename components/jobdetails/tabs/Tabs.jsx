@@ -18,22 +18,22 @@ const TabButton = ({name, activeTab, onHandleSearchType}) => {
 
 const Tabs = ({tabs, activeTab, setactiveTab}) => {
   return (
-    <View style= {styles.container}>
-      <FlatList
-      data = {tabs}
-      renderItem={({item}) => (
-        <TabButton
-          name={item}
-          activeTabs={activeTab}
-          onHandleSearchType={()=> setactiveTab(item)}
-          />
-      )}
+    <View style={styles.container}>
+    <FlatList
+      data={tabs}
       horizontal
       showsHorizontalScrollIndicator={false}
-      keyExtractor={item => item}
-      contentContainerStyle= {{columnGap: SIZES.small /2}}
-      />
-    </View>
+      renderItem={({ item }) => (
+        <TabButton
+          name={item}
+          activeTab={activeTab}
+          onHandleSearchType={() => setactiveTab(item)}
+        />
+      )}
+      contentContainerStyle={{ columnGap: SIZES.small / 2 }}
+      keyExtractor={(item) => item}
+    />
+  </View>
   )
 }
 

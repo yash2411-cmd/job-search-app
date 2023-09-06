@@ -15,7 +15,7 @@ import styles from './welcome.style'
 
 const jobTypes= ["Full-time", "Part-time", "Freelance", "Intership"]
 
-const Welcome = () => {
+const Welcome = ({searchTerm, setsearchTerm, handleClick }) => {
   const router = useRouter();
   const [activeJobTypes,setactiveJobType] = useState('Full-time')
 
@@ -31,15 +31,15 @@ const Welcome = () => {
         <View style={styles.searchWrapper}>
           <TextInput 
             style={styles.searchInput}
-            value=""
-            onChange={() => {}}
+            value={searchTerm}
+            onChangeText={(text) => setsearchTerm(text)}
             placeholder='What are you Searching for?'
 
           />
         </View>
 
         {/* making the search button on right side of searchbar. */}
-        <TouchableOpacity style={styles.searchBtn} onPress={() => {}}>
+        <TouchableOpacity style={styles.searchBtn} onPress={handleClick}>
            <Image
             source={icons.search}
             resizeMode='contain'
@@ -57,7 +57,7 @@ const Welcome = () => {
               style={styles.tab(activeJobTypes,item)}
               onPress={()=>{
                 setactiveJobType(item);
-                router.push('/search/$item')
+                router.push(`/search/${item}`)
               }}
             >
               <Text style= {styles.tabText(activeJobTypes,item)}>{item}</Text>
